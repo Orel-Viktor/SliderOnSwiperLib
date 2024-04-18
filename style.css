@@ -1,16 +1,11 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import "./styles/slider.scss";
+/* @import url("./styles/swiper-default.css"); */
+@import url("./styles/fonts.css");
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 a {
@@ -24,6 +19,7 @@ a:hover {
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
@@ -33,4 +29,28 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-image: url("/public/images/wrapper.jpg");
+  background-repeat: no-repeat;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1242px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: var(--phonk-font);
+  font-weight: 300;
 }
