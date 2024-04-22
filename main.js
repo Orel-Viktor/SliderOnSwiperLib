@@ -2,12 +2,14 @@ import "./style.css";
 
 let swiper = new Swiper(".mySwiper", {
   loop: true,
-  spaceBetween: 3,
-  slidesPerView: 4,
+  spaceBetween: 10,
+  slidesPerView: 5,
   freeMode: true,
   watchSlidesProgress: true,
 });
 let swiper2 = new Swiper(".mySwiper2", {
+  centeredSlides: true,
+  initialSlide: 2,
   loop: true,
   spaceBetween: 10,
   navigation: {
@@ -18,3 +20,5 @@ let swiper2 = new Swiper(".mySwiper2", {
     swiper: swiper,
   },
 });
+
+swiper2.controller.control = swiper;
